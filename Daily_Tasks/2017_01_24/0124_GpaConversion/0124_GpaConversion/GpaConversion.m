@@ -10,7 +10,7 @@
 
 @implementation GpaConversion
 
-- (NSString *)scoreConversion:(NSInteger)score;œ
+- (NSString *)scoreConversion:(NSInteger)score;
 {
     NSString *scoreConvers = 0;
     if (score >= 95)
