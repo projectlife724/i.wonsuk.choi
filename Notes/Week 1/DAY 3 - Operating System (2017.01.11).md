@@ -126,7 +126,7 @@ Kernel은 운영체제의 척추이자 핵심
 #### 형태에 따라
 ##### 1. 선형 구조
 
-![StackQueueDeque](
+![StackQueueDeque](https://github.com/projectlife724/i.wonsuk.choi/blob/master/Notes/Images/DAY%203/Stack,%20Queue,%20Deque.png?raw=true)
 
 1. **스택 (Stack)**  
 활용 예시: 뒤로가기 버튼, 최근 문서가 마지막으로 표현  
@@ -145,7 +145,7 @@ put & get
 
 ##### 2. 비선형 구조  
 
-![TreeGraph](
+![TreeGraph](https://github.com/projectlife724/i.wonsuk.choi/blob/master/Notes/Images/DAY%203/Tree,%20Graph.png?raw=true)
 
 1. **트리 (Tree)**  
 활용 예시: Finder, 탐색기 등  
