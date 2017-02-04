@@ -10,6 +10,8 @@
 
 @implementation Fibonacci
 
+//피보나치 수열 구현
+
 -(void)fibonacci:(NSUInteger)num;
 {   NSUInteger num1 = 0;
     NSUInteger num2 = 1;
