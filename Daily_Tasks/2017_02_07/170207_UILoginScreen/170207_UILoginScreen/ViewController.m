@@ -15,7 +15,6 @@
 @property UITextField *type1;
 @property UITextField *type2;
 
-@peroperty NSMutableArray
 @end
 
 @implementation ViewController
@@ -99,7 +98,7 @@
 }
 
 
-
+NSArray
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
