@@ -10,12 +10,17 @@
 
 @interface ViewController ()
 
+@property NSMutableArray *unsortedList;
+
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    unsortedList : @[@"3", @"2", @"13", @"14", @"12"];
+    
     // Do any additional setup after loading the view, typically from a nib.
     
 //    NSArray *list = [[NSArray alloc] initWithObjects:@"1", @"2", @"3", @"4", @"5", nil];
@@ -38,11 +43,10 @@
 //        NSString * str = [dic2 objectForKey:key];
 //        resultStr = [resultStr stringByAppendingString:[NSString stringWithFormat:@"%@|", str]];
 //        }
-    NSString *num;
-    NSString *num2;
-    NSArray *listPractice = @[@"1", @"1", @"3", @"3", @"6", @"7", @"8"];
+
+
     
-    NSMutableArray *compareResult = [[NSMutableArray alloc] init];
+//    NSMutableArray *compareResult = [[NSMutableArray alloc] init];
     
     
     
@@ -66,14 +70,37 @@
     
 //        NSLog(@"%@", numPractice);
     
-    for (num in listPractice)
-        if (![num2 containsString:num]) {
-            [num2 stringByAppendingString:num];
-              
-            }
-    NSLog (@"%@", num2);
-}
+    
+//    for (num in listPractice)
+//        if (![num2 containsString:num]) {
+//            [num2 stringByAppendingString:num];
+//              
+//            }
+//    NSLog (@"%@", num2);
+//}
 
+
+
+- (NSMutableArray *)bubbleSort:(NSMutableArray *)unsortedList
+    
+{
+    @property NSString *num;
+    @property NSString *num2;
+
+    
+    for (NSInteger i = 0; i < [unsortedList count]; i++) {
+        if ([unsortedList objectAtIndex:i] > [unsortedList objectAtIndex:i + 1])
+        {
+        num = [unsortedList objectAtIndex:i];
+        num2 = [unsortedList objectAtIndex: i + 1];
+        [unsortedList objectAtIndex:i + 1] = num;
+        [unsortedList objectAtIndex:i] = num2;
+        }
+        
+        sortedList = _num2;
+        
+    }
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

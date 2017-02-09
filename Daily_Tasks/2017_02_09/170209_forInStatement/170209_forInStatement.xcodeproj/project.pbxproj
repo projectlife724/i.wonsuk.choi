@@ -13,6 +13,7 @@
 		187895AC1E4C012700285242 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187895AA1E4C012700285242 /* Main.storyboard */; };
 		187895AE1E4C012700285242 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 187895AD1E4C012700285242 /* Assets.xcassets */; };
 		187895B11E4C012700285242 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187895AF1E4C012700285242 /* LaunchScreen.storyboard */; };
+		187895BA1E4C484100285242 /* BubbleSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 187895B91E4C484100285242 /* BubbleSort.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		187895AD1E4C012700285242 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		187895B01E4C012700285242 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		187895B21E4C012700285242 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		187895B81E4C484100285242 /* BubbleSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BubbleSort.h; sourceTree = "<group>"; };
+		187895B91E4C484100285242 /* BubbleSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BubbleSort.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 				187895A51E4C012700285242 /* AppDelegate.m */,
 				187895A71E4C012700285242 /* ViewController.h */,
 				187895A81E4C012700285242 /* ViewController.m */,
+				187895B81E4C484100285242 /* BubbleSort.h */,
+				187895B91E4C484100285242 /* BubbleSort.m */,
 				187895AA1E4C012700285242 /* Main.storyboard */,
 				187895AD1E4C012700285242 /* Assets.xcassets */,
 				187895AF1E4C012700285242 /* LaunchScreen.storyboard */,
@@ -153,6 +158,7 @@
 				187895A91E4C012700285242 /* ViewController.m in Sources */,
 				187895A61E4C012700285242 /* AppDelegate.m in Sources */,
 				187895A31E4C012700285242 /* main.m in Sources */,
+				187895BA1E4C484100285242 /* BubbleSort.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +313,7 @@
 				187895B71E4C012700285242 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
