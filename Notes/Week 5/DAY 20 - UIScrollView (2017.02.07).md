@@ -1,25 +1,65 @@
-//
-//  ViewController.m
-//  170207_UILoginScreen
-//
-//  Created by Won Suk Choi on 2017. 2. 7..
-//  Copyright © 2017년 Won Suk Choi. All rights reserved.
-//
+# DAY 20 - UIScrollView (2017.02.07)
 
-#import "ViewController.h"
+## I. UIScrollView
 
-@interface ViewController ()
-<UITextFieldDelegate, UIScrollViewDelegate>
+### 1. UIScrollView 주요 항목  
+```objc
+@property(nonatomic) CGPoint contentOffset;
+//contentView에서 view의 위치  
 
-@property UIScrollView *scView;
-@property UITextField *type1;
-@property UITextField *type2;
+@property(nonatomic)contentSize;
+// 먼저 설정해줘야 된다.  
 
-@end
+@property(nonatomic) BOOL bounces;
+// 인스타그램 새로고침처럼 밑으로 내리면 다시 바운스백 되는 것을 뜻한다.
 
-@implementation ViewController
+@property(nonatomic,getter=isPagingEnabled) BOOL pagingEnabled; 
+// 페이지 형태로 설정하여 부드럽게 넘어가는 것의 설정 여부
+
+@property(nonatomic,getter=isScrollEnabled) BOOL ScrollEnabled;
+// 스크롤의 설정 여부  
+
+@property(nonatomic) CGFloat minumZoomScale;
+// default = 1.0 이고 2.0으로 설정하면 2배까지 확대할 수 있다는 뜻이다.  
+
+@property(nonatomic) CGFloat maximunZoomScale;
+// default = 1.0 이고 2.0으로 설정하면 2배까지 축소할 수 있다는 뜻이다. 
 
 
+- (void)setContectOfSet:(CGPoint)contentOffset animated:(BOOL)animated;
+// 좌표값을 새로 설정하는 메소드이다. 로그인 창에서 텍스트 필드를 누른 후 키보드가 올라올 때, 텍스트 필드도 같이 올라가는 듯한 효과를 낼 때 사용할 수 있다.   
+- (void)setZoomScale:(CGFloat)scale animated:(BOOL)animated;
+```
+
+### 2. UIScrollViewDelegate 
+```objc
+@protocol UIScrollViewDelegate<NSObject>
+
+@optional
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView;  
+// 스크롤 뷰가 실행되고 난 직후에 실행 할 것들을 작성하는 메소드  
+
+-(void)scrollViewDidZoom:(UIScrollView *)scrollView;
+// 줌을 실행했을 때 불러지는 메소드 
+
+-(void)scrollViewWillBeginDraggin:(UIScrollView *)scrollView;
+// 빠른 속도가 아닌 천천히 스크롤을 움직이기 시작할 때 불러지는 메소드
+
+-(void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffSet;
+// 천천히 스크롤을 움직이고 멈추었을 때 불러지는 메소드
+
+-(void)scrollViewWillBeginDecelerating:(UIScrollView *)scrollView;
+// 스크롤 감속이 시작되는 시점에서 불러지는 메소드
+
+-(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView;
+// 스크이 멈출 때 불러지는 메소드
+
+-(void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView;  
+// 애니메이션을 포함한 스크롤이 실행되었을 때 불러지는 메소드. 애니메이션이 없으면 안 불려진다.  
+```
+
+### 3. UIScrollView 예제 로그인창 만들기
+```objc
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
@@ -97,12 +137,15 @@
     return YES;
 }
 
+```
+ 
+
+**cf. 더 알아보기 :** 아래에 사항들도 참고해서 알아볼 것
+
+## III. UIPageControl
+## IV. UISwitch
+## V. UISegmentedControl
+## VI. WebView
+## VII. TableView
 
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-
-@end

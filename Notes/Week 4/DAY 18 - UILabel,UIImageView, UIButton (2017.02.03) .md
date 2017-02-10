@@ -1,11 +1,59 @@
 
 
-# DAY 18 - UILabel,UIImageView, UIButton  
+# DAY 18 - UILabel, UIImageView, UIButton (2017.02.03)  
 
 
 ## I. UILabel
+### 1. 정의
+텍스트 정보를 표시하는 UI
+
+### 2. 주요 항목
+```obc
+@property(nonatomic, copy) NSString *text;
+@property(nonatomic, strong) UIFont *font;
+@property(nonatomic, strong) UIColor *textColor;
+@property(nonatomic) NSTextAlignment textAlignment;
+@property(nonatomic) NSLineBreakMode lineBreakMode;
+```
+
+### 3. 예제
+```objc
+UILabel *text = [[UILabel alloc] initWithFrame:CGRectMake(self.view.bounds.origin.x + 80, self.view.bounds.origin.y + 10, self.view.frame.size.width -90, 40)];
+[text setBackgroundColor:[UIColor clearColor]];
+[baseView addSubview:text];
+text.text = @"Dan Barber";
+text.font = [UIFont systemFontOfSize:30];
+    
+UILabel *memo = [[UILabel alloc] initWithFrame:CGRectMake(self.view.bounds.origin.x + 80, self.view.bounds.origin.y + 60, self.view.frame.size.width - 90, 10)];
+[memo setBackgroundColor:[UIColor clearColor]];
+[baseView addSubview:memo];
+memo.text = @"Chef of Modern French Cuisin";
+memo.font = [UIFont systemFontOfSize:12];
+memo.textColor = [UIColor colorWithRed:160/255.0 green:137/255.0 blue:137/255.0 alpha:1.0];
+```
 
 ## II. UIImageView
+### 1. 정의 
+이미지 정보를 표시하는 UI
+
+### 2. 주요항목
+```objc
+@property (nonatomic, strong) UIImage *image;
+@property (nonatomic) UIViewContentMode contentMode;
+```
+
+### 3. 예제 
+```objc
+UIImageView *baseView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 15, self.view.frame.size.width, 80)];
+[baseView setBackgroundColor:[UIColor clearColor]];
+[self.view addSubview:baseView];
+[baseView setAlpha:0.6];
+[baseView setContentMode:UIViewContentModeScaleToFill];
+baseView.image = [UIImage imageNamed:@"Cheftable4.jpg"];
+```
+
+### 4. setContentMode
+!
 
 ## III. UIButton  
 
