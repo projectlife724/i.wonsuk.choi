@@ -1,6 +1,4 @@
-
-
-# DAY 18 - UILabel, UIImageView, UIButton (2017.02.03)  
+# DAY 17 - UILabel, UIImageView, UIButton (2017.02.03)  
 
 
 ## I. UILabel
@@ -53,7 +51,7 @@ baseView.image = [UIImage imageNamed:@"Cheftable4.jpg"];
 ```
 
 ### 4. setContentMode
-!
+![ContentMode](https://github.com/projectlife724/i.wonsuk.choi/blob/master/Notes/Images/DAY%2018/ViewContentModeType.jpg?raw=true)
 
 ## III. UIButton  
 

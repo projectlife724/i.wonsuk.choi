@@ -1,4 +1,4 @@
-# DAY 19 - Delegate & TextField (2017.02.06)  
+# DAY 18 - Delegate & TextField (2017.02.06)  
 
 ## I. Delegate  
 

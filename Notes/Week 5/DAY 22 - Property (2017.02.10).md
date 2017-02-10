@@ -1,4 +1,4 @@
-# DAY 23 - Property (2017.02.10)
+# DAY 22 - Property (2017.02.10)
 
 subStringWithRange
 

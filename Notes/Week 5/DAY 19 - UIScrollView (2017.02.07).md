@@ -1,4 +1,4 @@
-# DAY 20 - UIScrollView (2017.02.07)
+# DAY 19 - UIScrollView (2017.02.07)
 
 ## I. UIScrollView
 

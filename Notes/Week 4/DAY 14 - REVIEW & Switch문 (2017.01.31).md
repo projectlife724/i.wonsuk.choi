@@ -1,4 +1,4 @@
-# DAY 15 - REVIEW & Switch문
+# DAY 14 - REVIEW & Switch문
 
 ## I. 아직 부족한 부분  
 ### 1. 초기화 메소드
