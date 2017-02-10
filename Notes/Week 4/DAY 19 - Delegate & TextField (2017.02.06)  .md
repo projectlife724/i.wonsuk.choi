@@ -41,6 +41,28 @@
 }
 ```
 
+### 3. Delegate 구현
+**UsingClass.h**
+
+```objc
+@interface UsingClass : SuperObject
+<CustomClassDelegate>
+
+@property (nonatomic, weak) CustomClass customView;
+
+@end
+```
+
+**UsingClass.m**
+
+```objc
+@implementation CustomClass
+
+-(void)actionBtn:(UIButton *)sender
+{
+	[self.delegate customClassMethod:self];
+}
+```
 
 ## II. UITextField
 = 사용자 텍스트 입력을 위한 UI Component  

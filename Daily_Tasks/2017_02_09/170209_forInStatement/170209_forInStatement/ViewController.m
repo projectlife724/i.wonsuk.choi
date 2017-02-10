@@ -19,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    unsortedList : @[@"3", @"2", @"13", @"14", @"12"];
+//    unsortedList : @[@"3", @"2", @"13", @"14", @"12"];
     
     // Do any additional setup after loading the view, typically from a nib.
     
@@ -77,30 +77,10 @@
 //              
 //            }
 //    NSLog (@"%@", num2);
-//}
-
-
-
-- (NSMutableArray *)bubbleSort:(NSMutableArray *)unsortedList
-    
-{
-    @property NSString *num;
-    @property NSString *num2;
-
-    
-    for (NSInteger i = 0; i < [unsortedList count]; i++) {
-        if ([unsortedList objectAtIndex:i] > [unsortedList objectAtIndex:i + 1])
-        {
-        num = [unsortedList objectAtIndex:i];
-        num2 = [unsortedList objectAtIndex: i + 1];
-        [unsortedList objectAtIndex:i + 1] = num;
-        [unsortedList objectAtIndex:i] = num2;
-        }
-        
-        sortedList = _num2;
-        
-    }
 }
+
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
