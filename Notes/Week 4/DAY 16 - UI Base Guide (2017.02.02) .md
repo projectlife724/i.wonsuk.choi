@@ -124,6 +124,13 @@ UIView *puzzleView = [[UIView alloc] initWithFrame:CGRectMake(15, 15, self.view.
 ### 'Day One' 이라는 일기 어플리케이션의 메인 화면을 분석
 
 #### 계층 구조
+![계층 구조](https://github.com/projectlife724/i.wonsuk.choi/blob/master/Notes/Images/Day%2016/UIAnalysis.png?raw=true)
+
+> 가장 하단에 네비게이션 바와 텝 바를 포함되어 있고 스크롤 뷰도 중앙에 위치해 있다. 스크롤 뷰 위에 일반 뷰와 테이블 뷰가 올려진다. 그리고 일반 뷰 위에 버튼 두 개와 상태만 표시하는 레이블 하나가 올려진다. 동 계층 테이블 뷰에서는 섹션과 셀로 나눠진다.  
+
+![셀](https://github.com/projectlife724/i.wonsuk.choi/blob/master/Notes/Images/Day%2016/UIAnalysisCell.png?raw=true)
+
+> 하나의 셀은 또 다시 레이블과 텍스트 레이블로 표시된다고 분석하였다.  
 
 
 

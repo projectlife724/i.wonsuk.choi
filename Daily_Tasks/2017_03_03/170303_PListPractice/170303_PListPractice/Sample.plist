@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Name</key>
+		<string>김재우</string>
+		<key>PhoneNumber</key>
+		<string>010-1111-1111</string>
+		<key>Address</key>
+		<string>경기도 용인시</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>윤철호</string>
+		<key>PhoneNumber</key>
+		<string>010-2222-2222</string>
+		<key>Address</key>
+		<string>서울특별시 강남구</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>이준구</string>
+		<key>PhoneNumber</key>
+		<string>010-3333-3333</string>
+		<key>Address</key>
+		<string>경기도 성남시 분당구</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>안재민</string>
+		<key>PhoneNumber</key>
+		<string>010-4443-4443</string>
+		<key>Address</key>
+		<string>경기도 고양시</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>안재현</string>
+		<key>PhoneNumber</key>
+		<string>010-5555-5555</string>
+		<key>Address</key>
+		<string>서울특별시 노원구</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>유병현</string>
+		<key>PhoneNumber</key>
+		<string>010-6665-6665</string>
+		<key>Address</key>
+		<string>경기도 </string>
+	</dict>
+</array>
+</plist>

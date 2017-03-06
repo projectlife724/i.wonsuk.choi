@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "SecondViewController.h"
 
 @interface ViewController ()
 <UITextFieldDelegate, UIScrollViewDelegate>
@@ -31,10 +32,11 @@
     UIImageView *backView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, offsetX, offsetY)];
     [backView setContentMode:UIViewContentModeScaleToFill];
     [backView setImage:[UIImage imageNamed:@"Background.jpg"]];
+    [backView setUserInteractionEnabled:YES];
     [self.view addSubview:backView];
     
     self.scView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, offsetX, offsetY)];
-    [self.view addSubview:self.scView];
+    [backView addSubview:self.scView];
     self.scView.delegate = self;
     [self.scView setContentSize:CGSizeMake(offsetX, offsetY * 1.3)];
     
@@ -69,9 +71,33 @@
     self.type2.delegate = self;
     self.type2.borderStyle = UITextBorderStyleLine;
     self.type2.tag = 20;
-
+    
+    UIButton *logInBtn = [[UIButton alloc] initWithFrame:CGRectMake(30, 330, 150, 30)];
+    [backView addSubview:logInBtn];
+    [logInBtn setBackgroundColor:[UIColor blackColor]];
+    [logInBtn setAlpha:0.4];
+    [logInBtn setTitle:@"Log In" forState:UIControlStateNormal];
+    
+    UIButton *signUpBtn = [[UIButton alloc] initWithFrame:CGRectMake(200, 330, 150, 30)];
+    [backView addSubview:signUpBtn];
+    [signUpBtn setBackgroundColor:[UIColor blackColor]];
+    [signUpBtn setAlpha:0.4];
+    [signUpBtn setTitle:@"Sign Up" forState:UIControlStateNormal];
+    [signUpBtn addTarget:self action:@selector(signUpBtn:) forControlEvents:UIControlEventTouchUpInside];
     
 }
+
+
+- (void) signUpBtn:(UIButton *)sender
+{
+//    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+//    SecondViewController *sVC = [storyboard instantiateViewControllerWithIdentifier:@"SecondViewController"];
+    
+    SecondViewController *sVC = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:[NSBundle mainBundle]];
+    [self.navigationController pushViewController:sVC animated:YES];
+}
+
+
 // 텍스트 필드를 눌렀을 때 키보드가 등장하면서 텍스트 필드가 올라가는듯한 효과를 주기 위한 메소드
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField
 {
